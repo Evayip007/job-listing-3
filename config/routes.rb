@@ -7,12 +7,11 @@ namespace :admin do
       post :publish
       post :hide
     end
+resources :resumes
     end
 end
 
-resources :jobs do
-  resources :resumes
-end
+resources :jobs
 
 root 'jobs#index'
 end
