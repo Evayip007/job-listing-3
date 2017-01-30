@@ -12,9 +12,12 @@ resources :resumes
     end
   end
 
+resources :jobs
+
+root 'welcome#index'
+
   resources :jobs do
       resources :resumes
     end
 
-root 'welcome#index'
 end
